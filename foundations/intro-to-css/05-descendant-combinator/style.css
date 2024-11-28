@@ -1,0 +1,12 @@
+.container p {
+    background-color: rgb(255, 255, 0);
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Other possible descendant combinators are:
+   - Both type selectors: div p
+   - One class selector and one type selector: div .text
+   - Both class selectors: .container .text
+*/
