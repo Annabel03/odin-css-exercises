@@ -1,0 +1,39 @@
+.odd {
+    background-color: rgb(253, 166, 166);
+    font-family: "Verdana", "DejaVu Sans", sans-serif;
+}
+
+#second {
+    color: hsl(238, 96%, 45%);
+    font-size: 36px;
+}
+
+.third {
+    font-size: 24px;
+}
+
+#fourth {
+    background-color: #a1f7a8;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*
+    Since 'Number 3' and 'Number 4' share the same font size of 24px,
+    give them both a class with a rule to set the font size, instead
+    of duplicating code.
+
+    i.e. In HTML file:
+        <p class="odd adjust-font-size">Number 3 - I'm a class, but cooler!</p>
+        <div id="fourth" class="adjust-font-size">Number 4 - I'm another ID.</div>
+
+        i.e. replace class "third" for the <p> element with "adjust-font-size"
+        and add "adjust-font-size" class to <div> element
+
+        In CSS file:
+        .adjust-font-size {
+            font-size: 24px;
+        }
+
+        and get rid of .third and font-size property from #fourth
+*/
