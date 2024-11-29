@@ -8,20 +8,15 @@ body {
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
-
 .para {
   font-size: 22px;
 }
 
-.confirm {
-  background: green;
-  color: white;
-  font-weight: bold;
-} 
+/* Move .small-para below .para so that it is the last rule applied */
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -29,14 +24,24 @@ body {
   font-size: 20px;
 }
 
+/* Move .confirm to below .button so that it is the last rule applied */
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+} 
+
+/* Changed selector from div.text to .text since we only want to apply these rules to the first
+   two <div> elements and not the child <div> */
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+/* Moved .child below .text to have the last rule applied to the last <div> element */
 .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
-}
-
-div.text {
-  color: rgb(0, 0, 0);
-  font-size: 22px;
-  font-weight: 100;
 }
